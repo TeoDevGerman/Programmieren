@@ -1,4 +1,4 @@
-package Programmieren;
+package Programmieren.lol;
 
 public class Main {
     public static void main(String[] args) {
