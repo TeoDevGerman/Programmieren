@@ -34,4 +34,10 @@ public class Stack {
         }
         return this.stapel[this.top_index--];
     }
+
+    public void printStapel(){
+        for(int i = 0; i<this.stapel.length; i++){
+            System.out.println("Stapel an der Stelle "+ i + " = "+this.stapel[i]);
+        }
+    }
 }
