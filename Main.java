@@ -7,7 +7,6 @@ public class Main {
         meinStapel.push(15);
         meinStapel.push(25);
         meinStapel.push(35);
-        meinStapel.push(45);
 
         meinStapel.printStapel();
     }
