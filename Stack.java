@@ -1,5 +1,3 @@
-package Programmieren.lol;
-
 public class Stack {
     private int top_index;
     private int kapazitaet;
@@ -21,8 +19,7 @@ public class Stack {
 
     public void push(int newValue) {
         if (isFull()) {
-            System.out.println(
-                    newValue + " konnte nicht hinzugefügt werden.\nGrund: Der Stapel ist voll." + this.stapel.length);
+            System.out.println(newValue + " konnte nicht hinzugefügt werden => Grund: Der Stapel ist voll.");
         } else {
             this.stapel[++this.top_index] = newValue;
         }
@@ -56,17 +53,5 @@ public class Stack {
                 System.out.println("Stapel an der Stelle " + i + " = " + this.stapel[i]);
             }
         }
-    }
-
-    public static void main(String[] args) {
-        Stack meinStapel = new Stack(5);
-        meinStapel.push(1);
-        meinStapel.push(2);
-        meinStapel.push(3);
-        meinStapel.push(0);
-
-        meinStapel.printStapel();
-
-        System.out.println("Oberster Value = " + meinStapel.peek());
     }
 }
